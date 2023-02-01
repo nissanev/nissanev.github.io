@@ -53,7 +53,7 @@ var documents = [{
     "id": 10,
     "url": "https://www.JekyllExample.com/first-blog-post",
     "title": "First Blog Post",
-    "body": "2022/07/10 - This is the first blog post using JekyllExample. com.  This is a quote inside that first blog post  This is a list item This is a second list itemHeader 1Some text under header 1 Header 2: Some text under header 2 Header 3: Some text under header 3 This is a link "
+    "body": "2022/07/10 - This is the first blog post using JekyllExample. com.  This is a quote inside that first blog post  This is a list item     This is a nested list item    This is a second list item     This is a nested list item         This is a nested-nested list item          Header 1Some text under header 1 Header 2: Some text under header 2 Header 3: Some text under header 3 This is a link "
     }];
 
 var idx = lunr(function () {

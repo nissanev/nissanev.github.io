@@ -5,8 +5,8 @@
     <description>A sample Jekyll Site!</description>
     <link>https://www.JekyllExample.com/</link>
     <atom:link href="https://www.JekyllExample.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 01 Feb 2023 20:12:03 +0000</pubDate>
-    <lastBuildDate>Wed, 01 Feb 2023 20:12:03 +0000</lastBuildDate>
+    <pubDate>Wed, 01 Feb 2023 20:25:18 +0000</pubDate>
+    <lastBuildDate>Wed, 01 Feb 2023 20:25:18 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -143,6 +143,8 @@
         
         <category>Jekyll</category>
         
+        <category>Tutorial</category>
+        
       </item>
     
       <item>
@@ -211,6 +213,8 @@ git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot
         
         <category>Jekyll</category>
         
+        <category>Tutorial</category>
+        
       </item>
     
       <item>
@@ -243,7 +247,7 @@ git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot
         <guid isPermaLink="true">https://www.JekyllExample.com/second-blog-post</guid>
         
         
-        <category>Tag1</category>
+        <category>Sample</category>
         
       </item>
     
@@ -256,8 +260,20 @@ git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot
 &lt;/blockquote&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;This is a list item&lt;/li&gt;
-  &lt;li&gt;This is a second list item&lt;/li&gt;
+  &lt;li&gt;This is a list item
+    &lt;ul&gt;
+      &lt;li&gt;This is a nested list item&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;This is a second list item
+    &lt;ul&gt;
+      &lt;li&gt;This is a nested list item
+        &lt;ul&gt;
+          &lt;li&gt;This is a nested-nested list item&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h1 id=&quot;header-1&quot;&gt;Header 1&lt;/h1&gt;
@@ -277,7 +293,7 @@ git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot
         <guid isPermaLink="true">https://www.JekyllExample.com/first-blog-post</guid>
         
         
-        <category>Tag1</category>
+        <category>Sample</category>
         
       </item>
     

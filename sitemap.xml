@@ -29,9 +29,12 @@
 <loc>https://www.jekyllexample.com/tags</loc>
 </url>
 <url>
-<loc>https://www.jekyllexample.com/category/tag1/</loc>
+<loc>https://www.jekyllexample.com/category/sample/</loc>
 </url>
 <url>
 <loc>https://www.jekyllexample.com/category/jekyll/</loc>
+</url>
+<url>
+<loc>https://www.jekyllexample.com/category/tutorial/</loc>
 </url>
 </urlset>
