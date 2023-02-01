@@ -1,25 +1,55 @@
----
-layout: null
-sitemap: false
----
 
-{% assign counter = 0 %}
-var documents = [{% for page in site.pages %}{% if page.url contains '.xml' or page.url contains 'assets' or page.url contains 'category' or page.url contains 'tag' %}{% else %}{
-    "id": {{ counter }},
-    "url": "{{ site.url }}{{site.baseurl}}{{ page.url }}",
-    "title": "{{ page.title }}",
-    "body": "{{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}"{% assign counter = counter | plus: 1 %}
-    }, {% endif %}{% endfor %}{% for page in site.without-plugin %}{
-    "id": {{ counter }},
-    "url": "{{ site.url }}{{site.baseurl}}{{ page.url }}",
-    "title": "{{ page.title }}",
-    "body": "{{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}"{% assign counter = counter | plus: 1 %}
-    }, {% endfor %}{% for page in site.posts %}{
-    "id": {{ counter }},
-    "url": "{{ site.url }}{{site.baseurl}}{{ page.url }}",
-    "title": "{{ page.title }}",
-    "body": "{{ page.date | date: "%Y/%m/%d" }} - {{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}"{% assign counter = counter | plus: 1 %}
-    }{% if forloop.last %}{% else %}, {% endif %}{% endfor %}];
+var documents = [{
+    "id": 0,
+    "url": "https://www.JekyllExample.com/404.html",
+    "title": "404",
+    "body": "404 Page does not exist!Please use the search bar at the top or visit our homepage! "
+    }, {
+    "id": 1,
+    "url": "https://www.JekyllExample.com/about",
+    "title": "About JekyllExample.com",
+    "body": " This is an about page that you can configure for your website. JekyllExample. com is a sample blog template from Chris Hammond To learn how to use JekyllExample visit the Jekyll Tutorials page on Christoc. com "
+    }, {
+    "id": 2,
+    "url": "https://www.JekyllExample.com/categories",
+    "title": "Categories",
+    "body": ""
+    }, {
+    "id": 3,
+    "url": "https://www.JekyllExample.com/",
+    "title": "Home",
+    "body": "      Featured:                                                                                                                                                                                                             Getting started with Jekyll                              :               So you want to get started with Jekyll? Well, you’ve come to the right place. This post will walk you through the steps to get. . . :                                                                       31 Jan 2023                                                                                                                                                                                                                                                                                                                          First Blog Post                              :               This is the first blog post using JekyllExample. com. :                                                                       10 Jul 2022                                                                                                                      All Stories:                                                                               Getting started with Jekyll              :       So you want to get started with Jekyll? Well, you’ve come to the right place. This post will walk you through the steps to get you going!:                               31 Jan 2023                                                                                                              Non-featured Blog Post              :       This is the second blog post, the difference is that this one is not featured. :                               01 Nov 2022                                                                                                              First Blog Post              :       This is the first blog post using JekyllExample. com. :                               10 Jul 2022                                            "
+    }, {
+    "id": 4,
+    "url": "https://www.JekyllExample.com/About",
+    "title": "",
+    "body": ""
+    }, {
+    "id": 5,
+    "url": "https://www.JekyllExample.com/redirects.json",
+    "title": "",
+    "body": "{“/About”:”https://www. jekyllexample. com/about”} "
+    }, {
+    "id": 6,
+    "url": "https://www.JekyllExample.com/robots.txt",
+    "title": "",
+    "body": "      Sitemap: {{ “sitemap. xml”   absolute_url }}   "
+    }, {
+    "id": 7,
+    "url": "https://www.JekyllExample.com/getting-started-with-jekyll",
+    "title": "Getting started with Jekyll",
+    "body": "2023/01/31 - So you want to get started with Jekyll? Well, you’ve come to the right place. This post will walk you through the steps to get you going! Get Started: First, you’ll need to install Jekyll. You can do this by running the following command: 1gem install jekyllCreate a New Site: Now that you have Jekyll installed, you can create a new site. To do this, run the following command: 1jekyll new my-awesome-siteServe Your Site: Now that you have a site, you can serve it locally. To do this, run the following command: 12cd my-awesome-sitejekyll serveMake Some Changes: Now that you have a site, you can make some changes. To do this, open the _config. yml file in your favorite text editor and make some changes. Commit Your Changes: Now that you have made some changes, you can commit them. To do this, run the following command: 12git add . git commit -m  Made some changes Push Your Changes: Now that you have committed your changes, you can push them. To do this, run the following command: 1git push origin masterConclusion: And that’s it! You’ve now got a Jekyll site up and running. You can now make some changes and push them to GitHub Pages. "
+    }, {
+    "id": 8,
+    "url": "https://www.JekyllExample.com/second-blog-post",
+    "title": "Non-featured Blog Post",
+    "body": "2022/11/01 - This is the second blog post, the difference is that this one is not featured.  This is a quote inside that first blog post  This is a list item This is a second list itemHeader 1Some text under header 1 Header 2: Some text under header 2 Header 3: Some text under header 3 This is a link "
+    }, {
+    "id": 9,
+    "url": "https://www.JekyllExample.com/first-blog-post",
+    "title": "First Blog Post",
+    "body": "2022/07/10 - This is the first blog post using JekyllExample. com.  This is a quote inside that first blog post  This is a list item This is a second list itemHeader 1Some text under header 1 Header 2: Some text under header 2 Header 3: Some text under header 3 This is a link "
+    }];
 
 var idx = lunr(function () {
     this.ref('id')
