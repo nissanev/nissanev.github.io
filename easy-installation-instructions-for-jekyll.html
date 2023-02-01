@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-ZKHV3G3SN8"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-ZKHV3G3SN8");
+		</script>
+
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<link rel="icon" href="/assets/images/Logo.png" />
+
+		<title>Easy instructions for installing Jekyll | JekyllExample.com</title>
+
+		<!-- Begin Jekyll SEO tag v2.8.0 -->
+		<title>
+			Easy instructions for installing Jekyll | JekyllExample.com - A sample
+			Jekyll Example website!
+		</title>
+		<meta name="generator" content="Jekyll v4.3.2" />
+		<meta
+			property="og:title"
+			content="Easy instructions for installing Jekyll"
+		/>
+		<meta property="og:locale" content="en_US" />
+		<meta
+			name="description"
+			content="This post is still a work in progress as of 2/1/2023"
+		/>
+		<meta
+			property="og:description"
+			content="This post is still a work in progress as of 2/1/2023"
+		/>
+		<link
+			rel="canonical"
+			href="https://www.jekyllexample.com/easy-installation-instructions-for-jekyll"
+		/>
+		<meta
+			property="og:url"
+			content="https://www.jekyllexample.com/easy-installation-instructions-for-jekyll"
+		/>
+		<meta
+			property="og:site_name"
+			content="JekyllExample.com - A sample Jekyll Example website!"
+		/>
+		<meta
+			property="og:image"
+			content="https://www.jekyllexample.com/BlogPost-4.jpg"
+		/>
+		<meta property="og:type" content="article" />
+		<meta
+			property="article:published_time"
+			content="2023-02-01T10:00:15+00:00"
+		/>
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+			property="twitter:image"
+			content="https://www.jekyllexample.com/BlogPost-4.jpg"
+		/>
+		<meta
+			property="twitter:title"
+			content="Easy instructions for installing Jekyll"
+		/>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "BlogPosting",
+				"dateModified": "2023-02-01T10:00:15+00:00",
+				"datePublished": "2023-02-01T10:00:15+00:00",
+				"description": "This post is still a work in progress as of 2/1/2023",
+				"headline": "Easy instructions for installing Jekyll",
+				"image": "https://www.jekyllexample.com/BlogPost-4.jpg",
+				"mainEntityOfPage": {
+					"@type": "WebPage",
+					"@id": "https://www.jekyllexample.com/easy-installation-instructions-for-jekyll"
+				},
+				"publisher": {
+					"@type": "Organization",
+					"logo": {
+						"@type": "ImageObject",
+						"url": "https://www.jekyllexample.com/assets/Logo.png"
+					}
+				},
+				"url": "https://www.jekyllexample.com/easy-installation-instructions-for-jekyll"
+			}
+		</script>
+		<!-- End Jekyll SEO tag -->
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+			integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+			crossorigin="anonymous"
+		/>
+
+		<link href="/assets/css/screen.css" rel="stylesheet" />
+
+		<link href="/assets/css/main.css" rel="stylesheet" />
+
+		<script src="/assets/js/jquery.min.js"></script>
+	</head>
+
+	<body class="layout-post">
+		<!-- defer loading of font and font awesome -->
+		<noscript id="deferred-styles">
+			<link
+				href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i"
+				rel="stylesheet"
+			/>
+			<link
+				rel="stylesheet"
+				href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+				integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+				crossorigin="anonymous"
+			/>
+		</noscript>
+
+		<!-- Begin Menu Navigation
+================================================== -->
+		<nav
+			class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down"
+		>
+			<div class="container pr-0">
+				<!-- Begin Logo -->
+				<a class="navbar-brand" href="/">
+					<img src="/assets/Logo.png" alt="JekyllExample.com" />
+				</a>
+				<!-- End Logo -->
+
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarMediumish"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarMediumish">
+					<!-- Begin Menu -->
+
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="/index.html">Home</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/about">About</a>
+						</li>
+
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="https://github.com/chrishammond/jekyllexample.github.io"
+								target="_blank"
+								>GitHub</a
+							>
+						</li>
+
+						<script src="/assets/js/lunr.js"></script>
+
+						<style>
+							.lunrsearchresult .title {
+								color: #d9230f;
+							}
+							.lunrsearchresult .url {
+								color: silver;
+							}
+							.lunrsearchresult a {
+								display: block;
+								color: #777;
+							}
+							.lunrsearchresult a:hover,
+							.lunrsearchresult a:focus {
+								text-decoration: none;
+							}
+							.lunrsearchresult a:hover .title {
+								text-decoration: underline;
+							}
+						</style>
+
+						<form
+							class="bd-search"
+							onSubmit="return lunr_search(document.getElementById('lunrsearch').value);"
+						>
+							<input
+								type="text"
+								class="form-control text-small launch-modal-search"
+								id="lunrsearch"
+								name="q"
+								maxlength="255"
+								value=""
+								placeholder="Type and enter..."
+							/>
+						</form>
+
+						<div id="lunrsearchresults">
+							<ul></ul>
+						</div>
+
+						<script src="/assets/js/lunrsearchengine.js"></script>
+					</ul>
+
+					<!-- End Menu -->
+				</div>
+			</div>
+		</nav>
+		<!-- End Navigation
+================================================== -->
+
+		<div class="site-content">
+			<div class="container">
+				<!-- Site Title
+================================================== -->
+				<!--
+<div class="mainheading">
+    <h1 class="sitetitle">JekyllExample.com</h1>
+    <p class="lead">
+        A sample Jekyll Site!
+    </p>
+</div>
+-->
+
+				<!-- Content
+================================================== -->
+				<div class="main-content">
+					<!-- Begin Article
+================================================== -->
+					<div class="container">
+						<div class="row">
+							<!-- Post Share -->
+							<div class="col-md-2 pl-0">
+								<div class="share sticky-top sticky-top-offset">
+									<p>Share</p>
+									<ul>
+										<li class="ml-1 mr-1">
+											<a
+												target="_blank"
+												href="https://twitter.com/intent/tweet?text=Easy instructions for installing Jekyll&url=https://www.jekyllexample.com/easy-installation-instructions-for-jekyll"
+												onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"
+											>
+												<i class="fab fa-twitter"></i>
+											</a>
+										</li>
+
+										<li class="ml-1 mr-1">
+											<a
+												target="_blank"
+												href="https://facebook.com/sharer.php?u=https://www.jekyllexample.com/easy-installation-instructions-for-jekyll"
+												onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;"
+											>
+												<i class="fab fa-facebook-f"></i>
+											</a>
+										</li>
+
+										<li class="ml-1 mr-1">
+											<a
+												target="_blank"
+												href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.jekyllexample.com/easy-installation-instructions-for-jekyll"
+												onclick="window.open(this.href, 'width=550,height=435');return false;"
+											>
+												<i class="fab fa-linkedin-in"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- Post -->
+
+							<div class="col-md-9 flex-first flex-md-unordered">
+								<div class="mainheading">
+									<!-- Author Box -->
+
+									<!-- Post Title -->
+									<h1 class="posttitle">
+										Easy instructions for installing Jekyll
+									</h1>
+								</div>
+
+								<!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+
+								<!-- End Adsense -->
+
+								<!-- Post Featured Image -->
+
+								<img
+									class="featured-image img-fluid lazyimg"
+									src="/assets/images_out/BlogPost-4-800-242f9970b.jpg"
+									alt="Easy instructions for installing Jekyll"
+									srcset="
+										/assets/images_out/BlogPost-4-400-242f9970b.jpg   400w,
+										/assets/images_out/BlogPost-4-600-242f9970b.jpg   600w,
+										/assets/images_out/BlogPost-4-800-242f9970b.jpg   800w,
+										/assets/images_out/BlogPost-4-1000-242f9970b.jpg 1000w
+									"
+								/>
+
+								<!-- End Featured Image -->
+
+								<!-- Post Content -->
+								<div class="article-post">
+									<!-- Toc if any -->
+
+									<!-- End Toc -->
+									<h1 id="this-post-is-still-a-work-in-progress-as-of-212023">
+										<em
+											>This post is still a work in progress as of 2/1/2023</em
+										>
+									</h1>
+
+									<p>
+										The goal for this blog post is to provide easy instructions
+										for installing Jekyll.
+									</p>
+
+									<p>
+										If you follow these steps, you should be able to create a
+										new Jekyll web site utilizing GitHub and GitHub Pages to
+										host your repository and web site.
+									</p>
+
+									<p>
+										We will walk you through the process of cloning the
+										repository, making some changes to the site to configure it
+										to be your own, and then ultimately getting your website
+										published using your own custom domain name.
+									</p>
+
+									<p>A couple of assumptions to start:</p>
+									<ol>
+										<li>
+											<a href="https://github.com/signup"
+												>You have a GitHub account created</a
+											>.
+										</li>
+										<li>
+											You have already purchased a custom domain name to use
+											(you can bypass this and create a site using
+											SITENAME.github.io)
+										</li>
+										<li>
+											You have Git tools installed (if you’re using Windows, use
+											Git For Windows)
+										</li>
+										<li>
+											You have
+											<a href="https://code.visualstudio.com/"
+												>Visual Studio Code</a
+											>
+											installed, or some other text editor that you’re
+											comfortable with.
+										</li>
+									</ol>
+
+									<h2 id="precursor">Precursor</h2>
+									<p>
+										This page is a work in progress, if you find something
+										missing or wrong, let me know!
+										<a
+											href="https://github.com/ChrisHammond/jekyllexample.github.io/issues"
+											>You can create an issue on the GitHub repo!</a
+										>
+									</p>
+
+									<h2 id="instructions">Instructions</h2>
+
+									<ol>
+										<li>
+											Create a new Organization on GitHub
+											<ul>
+												<li>
+													A free organization account will be sufficient. For
+													our example organization, we will used
+													JekyllExampleWeb (JekyllExample was already taken).
+												</li>
+												<li>
+													This previously was something I believe was necessary
+													to use GitHub pages, but based on my experience I am
+													not convinced it is required anymore, meaning you can
+													also create repos for GitHub pages under your personal
+													account (ex:ChrisHammond/jekyllexample.github.io)
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a
+												href="https://github.com/ChrisHammond/jekyllexample.github.io/fork"
+												>Create a Fork of the JekyllExample repository</a
+											>
+											<ul>
+												<li>
+													Create the fork within your new organization that you
+													created in step 1.
+												</li>
+											</ul>
+										</li>
+										<li>
+											Rename the repository to match the domain name that you
+											want to use for GitHub Pages
+											<ul>
+												<li>
+													As soon as you fork the repository, you can rename it.
+													You will want to rename it to match the domain name
+													that you want to use for GitHub Pages, for example we
+													use jekyllexample.com, so the repository is
+													jekyllexample.github.io.
+												</li>
+											</ul>
+										</li>
+										<li>
+											Clone the repository to your local machine for editing
+											<ul>
+												<li>
+													You can clone the repository to your local machine
+													using the following command, (assuming you have Git
+													installed, start up Git Bash and then navigate to the
+													folder where you want to clone the repository to)
+													<div class="language-bash highlighter-rouge">
+														<div class="highlight">
+															<pre
+																class="highlight"
+															><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre> git clone https://github.com/ORGANIZATION/SITENAME.github.io.git
+</pre></td></tr></tbody></table></code></pre>
+														</div>
+													</div>
+												</li>
+												<li>
+													Where SITENAME is the name of your repository that you
+													modified in Step 3.
+												</li>
+											</ul>
+										</li>
+										<li>
+											Open the repository in Visual Studio Code
+											<ul>
+												<li>
+													You can open the repository in Visual Studio Code
+													using the following command:
+													<div class="language-bash highlighter-rouge">
+														<div class="highlight">
+															<pre
+																class="highlight"
+															><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre> code SITENAME.github.io
+</pre></td></tr></tbody></table></code></pre>
+														</div>
+													</div>
+												</li>
+												<li>
+													Where SITENAME is the name of your repository that you
+													modified in Step 3.
+												</li>
+											</ul>
+										</li>
+										<li>
+											Change the _config.yml file
+											<ul>
+												<li>
+													This file has a number of variables for options for
+													your site, such as Title, Description, Author, etc.
+													You will want to customize these to start to brand and
+													name your site.
+												</li>
+												<li>
+													If you’re using Google Analytics you can configure the
+													MEASUREMENT ID here as well.
+												</li>
+											</ul>
+										</li>
+										<li>
+											Edit the CNAME file in the root of the repository to match
+											your custom domain name
+											<ul>
+												<li>
+													If you’re not using a custom domain name, you can
+													delete this file.
+												</li>
+											</ul>
+										</li>
+										<li>
+											Commit your changes to the GitHub repository and push
+											them.
+											<div class="language-bash highlighter-rouge">
+												<div class="highlight">
+													<pre
+														class="highlight"
+													><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre> git add <span class="nb">.</span>
+ git commit <span class="nt">-m</span> <span class="s2">"Some updated comment about the commit here"</span>
+ git push
+</pre></td></tr></tbody></table></code></pre>
+												</div>
+											</div>
+											<ul>
+												<li>
+													You may be prompted to configure your GitHub
+													credentials at this point,
+													<a
+														href="https://stackoverflow.com/questions/46878457/adding-git-credentials-on-windows"
+														>here’s an approach on how to do that</a
+													>.
+												</li>
+											</ul>
+										</li>
+										<li>
+											Configure the repository settings for GitHub Pages and
+											Workflow to allow for deployment
+											<ul>
+												<li>
+													In the GitHub Repository Settings, you will want to
+													configure the following:
+													<ul>
+														<li>
+															Under the GitHub Settings find the GitHub Pages
+															section
+														</li>
+														<li>Under Source choose “Deploy from a branch”</li>
+														<li>Under Branch choose “main” and “/(root)”</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li>
+											Configure your DNS for your domain to point to GitHub
+											pages
+											<ul>
+												<li>
+													You will need to do this before step 10 so that GitHub
+													can verify and find your custom domain name configured
+													properly.
+												</li>
+												<li>
+													<p>
+														I use CloudFlare for my domains, so the DNS entries
+														are configured as follows:
+														<img
+															src="/assets/images_out/cloudflaredns-800-a6634d8b3.jpg"
+															alt="DNS Settings for CloudFlare"
+															srcset="
+																/assets/images_out/cloudflaredns-400-a6634d8b3.jpg   400w,
+																/assets/images_out/cloudflaredns-600-a6634d8b3.jpg   600w,
+																/assets/images_out/cloudflaredns-800-a6634d8b3.jpg   800w,
+																/assets/images_out/cloudflaredns-1000-a6634d8b3.jpg 1000w
+															"
+														/>
+													</p>
+												</li>
+												<li>
+													You would replace jekyllexample.com with your domain
+													in your DNS settings.
+												</li>
+											</ul>
+										</li>
+										<li>
+											Configure your custom Domain Name
+											<ul>
+												<li>
+													Under the GitHub Settings find the GitHub Pages
+													section
+												</li>
+												<li>
+													Under Custom Domain, enter your custom domain name
+													(ex: jekyllexample.com)
+												</li>
+											</ul>
+										</li>
+									</ol>
+								</div>
+
+								<!-- Rating -->
+
+								<!-- Post Date -->
+								<p>
+									<small>
+										<span class="post-date"
+											><time class="post-date" datetime="2023-02-01"
+												>01 Feb 2023</time
+											></span
+										>
+									</small>
+								</p>
+
+								<!-- Post Categories -->
+								<div class="after-post-cats">
+									<ul class="tags mb-4">
+										<li>
+											<a class="smoothscroll" href="/categories#Jekyll"
+												>Jekyll</a
+											>
+										</li>
+									</ul>
+								</div>
+								<!-- End Categories -->
+
+								<!-- Post Tags -->
+								<div class="after-post-tags">
+									<ul class="tags"></ul>
+								</div>
+								<!-- End Tags -->
+
+								<!-- Prev/Next -->
+								<div
+									class="row PageNavigation d-flex justify-content-between font-weight-bold"
+								>
+									<a
+										class="prev d-block col-md-6"
+										href="/getting-started-with-jekyll"
+									>
+										&laquo; Getting started with Jekyll</a
+									>
+
+									<div class="clearfix"></div>
+								</div>
+								<!-- End Categories -->
+							</div>
+							<!-- End Post -->
+						</div>
+					</div>
+					<!-- End Article
+================================================== -->
+
+					<!-- Begin Comments
+================================================== -->
+
+					<!--End Comments
+================================================== -->
+
+					<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+				</div>
+			</div>
+
+			<!-- Categories Jumbotron
+================================================== -->
+			<div class="jumbotron fortags">
+				<div class="d-md-flex h-100">
+					<div class="col-md-4 transpdark align-self-center text-center h-100">
+						<div
+							class="d-md-flex align-items-center justify-content-center h-100"
+						>
+							<h2 class="d-md-block align-self-center py-1 font-weight-light">
+								Explore <span class="d-none d-md-inline">→</span>
+							</h2>
+						</div>
+					</div>
+					<div class="col-md-8 p-5 align-self-center text-center">
+						<a class="mt-1 mb-1" href="/categories#Tag1">Tag1 (2)</a>
+
+						<a class="mt-1 mb-1" href="/categories#Jekyll">Jekyll (2)</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Begin Footer
+================================================== -->
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 text-center text-lg-left">
+							Copyright © 2023 JekyllExample.com
+						</div>
+						<div class="col-md-6 col-sm-6 text-center text-lg-right">
+							<a target="_blank" href="https://www.chrishammond.com/"
+								>Forked from Chris Hammond</a
+							>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End Footer
+================================================== -->
+		</div>
+		<!-- /.site-content -->
+
+		<!-- Scripts
+================================================== -->
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+			integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="/assets/js/mediumish.js"></script>
+
+		<script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+		<script id="dsq-count-scr" src="//.disqus.com/count.js"></script>
+	</body>
+</html>
