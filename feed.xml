@@ -5,13 +5,16 @@
     <description>A sample Jekyll Site!</description>
     <link>https://www.JekyllExample.com/</link>
     <atom:link href="https://www.JekyllExample.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 01 Feb 2023 05:17:04 +0000</pubDate>
-    <lastBuildDate>Wed, 01 Feb 2023 05:17:04 +0000</lastBuildDate>
+    <pubDate>Wed, 01 Feb 2023 05:34:22 +0000</pubDate>
+    <lastBuildDate>Wed, 01 Feb 2023 05:34:22 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
         <title>Getting started with Jekyll</title>
-        <description>&lt;p&gt;So you want to get started with Jekyll? Well, you’ve come to the right place. This post will walk you through the steps to get you going!&lt;/p&gt;
+        <description>&lt;p&gt;So you want to get started with Jekyll?&lt;/p&gt;
+
+&lt;p&gt;Well, you’ve come to the right place. This post will walk you through the steps to get you going if you’re new to Jekyll and want to get it up and running with a clean instance.&lt;br /&gt;
+We recommend if you’re brand new to Jekyll though you use our other instructions that utilize this site as a template for you to build your own site, complete with theme and sample content.&lt;/p&gt;
 
 &lt;h2 id=&quot;get-started&quot;&gt;Get Started&lt;/h2&gt;
 
