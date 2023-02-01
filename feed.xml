@@ -5,8 +5,8 @@
     <description>A sample Jekyll Site!</description>
     <link>https://www.JekyllExample.com/</link>
     <atom:link href="https://www.JekyllExample.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 01 Feb 2023 20:25:18 +0000</pubDate>
-    <lastBuildDate>Wed, 01 Feb 2023 20:25:18 +0000</lastBuildDate>
+    <pubDate>Wed, 01 Feb 2023 20:55:48 +0000</pubDate>
+    <lastBuildDate>Wed, 01 Feb 2023 20:55:48 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -39,9 +39,9 @@
       &lt;li&gt;This previously was something I believe was necessary to use GitHub pages, but based on my experience I am not convinced it is required anymore, meaning you can also create repos for GitHub pages under your personal account (ex:ChrisHammond/jekyllexample.github.io)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/ChrisHammond/jekyllexample.github.io/fork&quot;&gt;Create a Fork of the JekyllExample repository&lt;/a&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ChrisHammond/jekyllexample.github.io/generate&quot;&gt;Create a new repository based off the JekyllExample repository&lt;/a&gt;
     &lt;ul&gt;
-      &lt;li&gt;Create the fork within your new organization that you created in step 1.&lt;/li&gt;
+      &lt;li&gt;While logged into GitHub, you should see a button that says “Use this template” next to the Code button in the JekyllExample repo, creating on the Use this template button will allow you to create a fork that is disconnected from the original repo and doesn’t bring over all the change history.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Rename the repository to match the domain name that you want to use for GitHub Pages
