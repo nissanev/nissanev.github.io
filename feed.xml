@@ -5,8 +5,8 @@
     <description>A sample Jekyll Site!</description>
     <link>https://www.JekyllExample.com/</link>
     <atom:link href="https://www.JekyllExample.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 01 Feb 2023 20:55:48 +0000</pubDate>
-    <lastBuildDate>Wed, 01 Feb 2023 20:55:48 +0000</lastBuildDate>
+    <pubDate>Wed, 01 Feb 2023 21:00:09 +0000</pubDate>
+    <lastBuildDate>Wed, 01 Feb 2023 21:00:09 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -134,7 +134,19 @@
       &lt;li&gt;If both of those actions have completed successfully, you should be able to navigate to your custom domain name and see your site.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;Next steps! Edit the blog posts in the _posts folder, or delete them and create your own posts.
+    &lt;ul&gt;
+      &lt;li&gt;The easiest way to create a new post is to simply copy and paste one of the existing posts
+        &lt;ul&gt;
+          &lt;li&gt;Rename the file to match the date and title of your post&lt;/li&gt;
+          &lt;li&gt;Edit the file to change the content/title and importantly be sure to update the published date to the dat you want the post to be.&lt;/li&gt;
+          &lt;li&gt;Commit and push your changes to GitHub and you should see your new post on your site after the workflow completes.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
+
 </description>
         <pubDate>Wed, 01 Feb 2023 10:00:15 +0000</pubDate>
         <link>https://www.JekyllExample.com/easy-installation-instructions-for-jekyll</link>
