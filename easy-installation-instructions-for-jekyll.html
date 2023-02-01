@@ -551,6 +551,16 @@
 													properly.
 												</li>
 												<li>
+													You basically need to setup A records for your domain
+													name that point to the following IP addresses:
+													<ul>
+														<li>185.199.108.153</li>
+														<li>185.199.109.153</li>
+														<li>185.199.110.153</li>
+														<li>185.199.111.153</li>
+													</ul>
+												</li>
+												<li>
 													<p>
 														I use CloudFlare for my domains, so the DNS entries
 														are configured as follows:
@@ -582,6 +592,26 @@
 												<li>
 													Under Custom Domain, enter your custom domain name
 													(ex: jekyllexample.com)
+												</li>
+											</ul>
+										</li>
+										<li>
+											Navigate to the Actions tab in the GitHub interface
+											<ul>
+												<li>
+													You should see your commit that you pushed in step 8,
+													and you should see a workflow that is running (or has
+													ran).
+												</li>
+												<li>
+													After that you should see a second action that is
+													running (or has ran) something like “pages build and
+													deployment”
+												</li>
+												<li>
+													If both of those actions have completed successfully,
+													you should be able to navigate to your custom domain
+													name and see your site.
 												</li>
 											</ul>
 										</li>

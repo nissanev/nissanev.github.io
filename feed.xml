@@ -5,8 +5,8 @@
     <description>A sample Jekyll Site!</description>
     <link>https://www.JekyllExample.com/</link>
     <atom:link href="https://www.JekyllExample.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 01 Feb 2023 20:04:33 +0000</pubDate>
-    <lastBuildDate>Wed, 01 Feb 2023 20:04:33 +0000</lastBuildDate>
+    <pubDate>Wed, 01 Feb 2023 20:12:03 +0000</pubDate>
+    <lastBuildDate>Wed, 01 Feb 2023 20:12:03 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -106,9 +106,17 @@
   &lt;li&gt;Configure your DNS for your domain to point to GitHub pages
     &lt;ul&gt;
       &lt;li&gt;You will need to do this before step 10 so that GitHub can verify and find your custom domain name configured properly.&lt;/li&gt;
+      &lt;li&gt;You basically need to setup A records for your domain name that point to the following IP addresses:
+        &lt;ul&gt;
+          &lt;li&gt;185.199.108.153&lt;/li&gt;
+          &lt;li&gt;185.199.109.153&lt;/li&gt;
+          &lt;li&gt;185.199.110.153&lt;/li&gt;
+          &lt;li&gt;185.199.111.153&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;I use CloudFlare for my domains, so the DNS entries are configured as follows:
- &lt;img src=&quot;/assets/images_out/cloudflaredns-800-a6634d8b3.jpg&quot; alt=&quot;DNS Settings for CloudFlare&quot; srcset=&quot;/assets/images_out/cloudflaredns-400-a6634d8b3.jpg 400w, /assets/images_out/cloudflaredns-600-a6634d8b3.jpg 600w, /assets/images_out/cloudflaredns-800-a6634d8b3.jpg 800w, /assets/images_out/cloudflaredns-1000-a6634d8b3.jpg 1000w&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/assets/images_out/cloudflaredns-800-a6634d8b3.jpg&quot; alt=&quot;DNS Settings for CloudFlare&quot; srcset=&quot;/assets/images_out/cloudflaredns-400-a6634d8b3.jpg 400w, /assets/images_out/cloudflaredns-600-a6634d8b3.jpg 600w, /assets/images_out/cloudflaredns-800-a6634d8b3.jpg 800w, /assets/images_out/cloudflaredns-1000-a6634d8b3.jpg 1000w&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;You would replace jekyllexample.com with your domain in your DNS settings.&lt;/li&gt;
     &lt;/ul&gt;
@@ -117,6 +125,13 @@
     &lt;ul&gt;
       &lt;li&gt;Under the GitHub Settings find the GitHub Pages section&lt;/li&gt;
       &lt;li&gt;Under Custom Domain, enter your custom domain name (ex: jekyllexample.com)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Navigate to the Actions tab in the GitHub interface
+    &lt;ul&gt;
+      &lt;li&gt;You should see your commit that you pushed in step 8, and you should see a workflow that is running (or has ran).&lt;/li&gt;
+      &lt;li&gt;After that you should see a second action that is running (or has ran) something like “pages build and deployment”&lt;/li&gt;
+      &lt;li&gt;If both of those actions have completed successfully, you should be able to navigate to your custom domain name and see your site.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
