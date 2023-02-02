@@ -5,8 +5,8 @@
     <description>A sample Jekyll Site!</description>
     <link>https://www.JekyllExample.com/</link>
     <atom:link href="https://www.JekyllExample.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 02 Feb 2023 15:41:53 +0000</pubDate>
-    <lastBuildDate>Thu, 02 Feb 2023 15:41:53 +0000</lastBuildDate>
+    <pubDate>Thu, 02 Feb 2023 15:52:57 +0000</pubDate>
+    <lastBuildDate>Thu, 02 Feb 2023 15:52:57 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -36,7 +36,7 @@
   &lt;li&gt;Create a new Organization on GitHub
     &lt;ul&gt;
       &lt;li&gt;A free organization account will be sufficient. For our example organization, we will used JekyllExampleWeb (JekyllExample was already taken).&lt;/li&gt;
-      &lt;li&gt;This previously was something I believe was necessary to use GitHub pages, but based on my experience I am not convinced it is required anymore, meaning you can also create repos for GitHub pages under your personal account (ex:ChrisHammond/jekyllexample.github.io)&lt;/li&gt;
+      &lt;li&gt;Creating a new organization for each custom domain name you are going to use makes it easier to setup and manage multiple sites. You theoretically could get by with &lt;a href=&quot;https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#types-of-github-pages-sites&quot;&gt;one Organization or just multiple projects under your user account&lt;/a&gt;, but I find it easier to manage multiple sites this way.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/ChrisHammond/jekyllexample.github.io/generate&quot;&gt;Create a new repository based off the JekyllExample repository&lt;/a&gt;
