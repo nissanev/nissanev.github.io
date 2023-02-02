@@ -5,8 +5,8 @@
     <description>A sample Jekyll Site!</description>
     <link>https://www.JekyllExample.com/</link>
     <atom:link href="https://www.JekyllExample.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 01 Feb 2023 21:22:24 +0000</pubDate>
-    <lastBuildDate>Wed, 01 Feb 2023 21:22:24 +0000</lastBuildDate>
+    <pubDate>Thu, 02 Feb 2023 15:41:53 +0000</pubDate>
+    <lastBuildDate>Thu, 02 Feb 2023 15:41:53 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -42,6 +42,7 @@
   &lt;li&gt;&lt;a href=&quot;https://github.com/ChrisHammond/jekyllexample.github.io/generate&quot;&gt;Create a new repository based off the JekyllExample repository&lt;/a&gt;
     &lt;ul&gt;
       &lt;li&gt;While logged into GitHub, you should see a button that says “Use this template” next to the Code button in the JekyllExample repo, creating on the Use this template button will allow you to create a fork that is disconnected from the original repo and doesn’t bring over all the change history.&lt;/li&gt;
+      &lt;li&gt;Be sure to check the “Include all branches” option when doing this, otherwise MAIN won’t come over and the workflow won’t work.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Rename the repository to match the domain name that you want to use for GitHub Pages
