@@ -5,13 +5,13 @@
     <description>A sample Jekyll Site!</description>
     <link>https://www.JekyllExample.com/</link>
     <atom:link href="https://www.JekyllExample.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 03 Feb 2023 05:28:20 +0000</pubDate>
-    <lastBuildDate>Fri, 03 Feb 2023 05:28:20 +0000</lastBuildDate>
+    <pubDate>Fri, 03 Feb 2023 05:37:25 +0000</pubDate>
+    <lastBuildDate>Fri, 03 Feb 2023 05:37:25 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
         <title>Easy instructions for installing Jekyll</title>
-        <description>&lt;h1 id=&quot;this-post-is-still-a-work-in-progress-as-of-212023&quot;&gt;&lt;em&gt;This post is still a work in progress as of 2/1/2023&lt;/em&gt;&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;this-post-is-still-a-work-in-progress-as-of-232023&quot;&gt;&lt;em&gt;This post is still a work in progress as of 2/3/2023&lt;/em&gt;&lt;/h1&gt;
 
 &lt;p&gt;The goal for this blog post is to provide easy instructions for installing Jekyll.&lt;/p&gt;
 
