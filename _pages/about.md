@@ -6,6 +6,6 @@ comments: false
 redirect_from: 
   - "/About"
 ---
-{% picture About-1.jpg %}
+{% picture nissanev-1.jpg %}
 
 Want this domain name?
