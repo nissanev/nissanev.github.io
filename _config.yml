@@ -1,8 +1,8 @@
 # Site Settings
 # You can change the settings below in order to customize your website.
-name: "JekyllExample.com"
-title: "JekyllExample.com - A sample Jekyll Example website! "
-description: "A sample Jekyll Site!"
+name: "NissanEV.com"
+title: "NissanEV.com - NissanEv.com Domain For Sale! "
+description: "A domain name for sale!"
 logo: 'assets/Logo.png'
 favicon: 'assets/favicon.ico'
 baseurl: ""
@@ -11,7 +11,7 @@ google_analytics: 'G-ZKHV3G3SN8' # configured for Google Analytics 4 MEASUREMENT
 mailchimp-list: 
 include: ["_pages"]
 permalink: /:title/
-url: 'https://www.JekyllExample.com'
+url: 'https://www.nissanev.com'
 
 templatemessage: '<a target="_blank" href="https://www.chrishammond.com/">Forked from Chris Hammond</a>'
 
@@ -24,7 +24,7 @@ authors:
     email: christoc@christoc.com
     web: https://www.chrishammond.com
     twitter: https://twitter.com/christoc
-    description: "Founder of JekyllExample.com. Read more at ChrisHammond.com" 
+    description: "Founder of NissanEV.com. Read more at ChrisHammond.com" 
 
 # Plugins
 plugins:
