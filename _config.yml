@@ -6,14 +6,14 @@ description: "A domain name for sale!"
 logo: 'assets/Logo.png'
 favicon: 'assets/favicon.ico'
 baseurl: ""
-google_analytics: 'G-ZKHV3G3SN8' # configured for Google Analytics 4 MEASUREMENT ID
+google_analytics: 'G-8TXFNP1X06' # configured for Google Analytics 4 MEASUREMENT ID
 # disqus: 
 mailchimp-list: 
 include: ["_pages"]
 permalink: /:title/
 url: 'https://www.nissanev.com'
 
-templatemessage: '<a target="_blank" href="https://www.chrishammond.com/">Forked from Chris Hammond</a>'
+templatemessage: 'Another Christoc.com project'
 
 # Authors
 authors:
