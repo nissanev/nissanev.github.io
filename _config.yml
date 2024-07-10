@@ -4,7 +4,7 @@ name: "NissanEV.com"
 title: "NissanEV.com - NissanEv.com Domain For Sale! "
 description: "A domain name for sale!"
 logo: 'assets/Logo.png'
-favicon: 'assets/favicon.ico'
+favicon: '/assets/favicon.ico'
 baseurl: ""
 google_analytics: 'G-8TXFNP1X06' # configured for Google Analytics 4 MEASUREMENT ID
 # disqus: 
@@ -20,11 +20,14 @@ authors:
   chris:
     name: Chris Hammond
     display_name: Chris Hammond
+    first_name: Chris
+    last_name: Hammond
     gravatar: bff097b7cc348bebce39ee1c7694d125
-    email: christoc@christoc.com
+    email: z@christoc.com
     web: https://www.chrishammond.com
     twitter: https://twitter.com/christoc
-    description: "Founder of NissanEV.com. Read more at ChrisHammond.com" 
+    description: "Creator of NissanEV.com. Read more at <a href=\"https://www.chrishammond.com\">Chris Hammond</a>" 
+
 
 # Plugins
 plugins:

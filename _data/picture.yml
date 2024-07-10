@@ -1,0 +1,55 @@
+﻿# _data/picture.yml
+
+presets:
+  default:
+    formats: [original]
+    widths: [200, 400, 800, 1600, 2000]
+    link_source: false
+
+  featured:
+    formats: [original]
+    widths: [200, 400, 800, 1600, 2000]
+    link_source: false
+    attr:
+      itemprop: image
+
+  direct:
+    markup: direct_url
+    formats: [original]
+    widths: [200, 400, 800, 1600, 2000]
+    fallback_width: 1600
+
+  directred:
+    markup: direct_url
+    formats: [original]
+    widths: [400]
+    fallback_width: 400
+
+  direct200:
+    # markup: direct_url
+    link_source: false # wrap images in a link to the original source image.
+    formats: [ original] # Must be an array, and order matters.
+    widths: [200, 400, 800, 1600, 2000] # Must be an array.
+    size: 400px
+
+  directsrc:
+    markup: naked_srcset
+    widths: [200, 400, 800, 1600, 2000]
+
+  blogcrop:
+    crop: '16:9' # remoted crop for now 
+    formats: [ original]
+    widths: [200, 400, 800, 1600, 2000]
+    link_source: false
+    
+  hpslider:
+    formats: [ original]
+    widths: [400, 1600, 2000]
+    fallback_width: 1600
+    link_source: false
+
+  portthumb:  
+    formats: [ original]
+    widths: [200, 400, 600]
+    link_source: false
+    fallback_width: 600

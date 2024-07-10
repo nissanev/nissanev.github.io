@@ -1,3 +1,4 @@
+{% assign author = site.authors[page.author] %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,12 +16,43 @@
 {% endif %}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>
+    {% if paginator.page %}
+        {% if paginator.page > 1 %}
+            Page {{ paginator.page }} of {{ paginator.total_pages }} - 
+        {% endif %}
+    {% endif %}
+    {% if page.title %}{{ page.title }} - {{ site.name }}{% else %}{{ site.title }}{% endif %}
 
-<link rel="icon" href="{{ site.baseurl }}/assets/favicon.ico">
+</title>
+<link rel="icon" href="{{ site.baseurl }}{{ site.favicon }}">
 
-<title>{{ page.title }} | {{site.name}}</title>
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:image" content="{{ site.url }}{% if page.image %}{% picture direct {{ page.image }} %}{% else %}{{ site.header-img }}{% endif %}" />
+{% if page.type %}
+<meta property="og:type" content="{{ page.type }}" />
+{% else %}    
+<meta property="og:type" content="article" />
+{% endif %}
+<meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
+{% if page.description %}
+<meta property="og:description" content="{{ page.description }}" />
+<meta name="description" content="{{ page.description }}">
+{% else %}
+<meta property="og:description" content="{{ site.description }}" />
+<meta name="description" content="{{ site.description }}">
+{% endif %}       
+{% assign cacheBust = site.time | date:'?v=%s' %}
 
-{% seo %}
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@{{ site.authors[page.author].twitter }}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{{ page.description | default: site.description }}">
+<meta name="twitter:image" content="{{ site.url }}{% if page.image %}{% picture direct {{ page.image }} %}{% else %}{{ site.header-img }}{% endif %}">
+
+<meta name="keywords" content="{{ page.keywords }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html' }}">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     
@@ -29,6 +61,51 @@
 <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
 
 <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+
+{% if page.url != "/" %}
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "url": "{{ site.url }}{{ page.url }}",
+      "name": {{ page.title | jsonify }},
+      "headline": {{ page.title | jsonify }},
+      "keywords": {{ page.keywords | join: ',' | jsonify }},
+      "description": {{ page.description | strip_html | strip_newlines | strip | jsonify }},
+      "articleBody": {{ page.content | strip_html | jsonify }},
+      "datePublished": {{ page.date | jsonify }},
+      "dateModified": {{ page.last_modified_at | default: page.date | jsonify }},
+      {% if page.author %}
+      "author": {
+        "@type": "Person",
+        "name": {{ author.display_name | jsonify }},
+        "givenName": {{ author.first_name | jsonify }},
+        "familyName": {{ author.last_name | jsonify }},
+        "email": {{ author.email | jsonify }},
+        "url": "{{ author.web }}"
+      },
+      {% endif %}
+      "publisher": {
+        "@type": "Organization",
+        "name": {{ site.title | jsonify }},
+        "url": "{{ site.url }}",
+        "logo": {
+          "@type": "ImageObject",
+          "width": 32,
+          "height": 32,
+          "url": "{{ site.url }}/{{ site.favicon }}"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}/{{ page.url }}"
+      },
+      "image": [
+        "{{ site.url }}{% if page.image %}{% picture direct {{ page.image }} %}{% else %}{{ site.header-img }}{% endif %}"
+      ]
+    }
+</script>
+{% endif %}
 
 </head>
 
@@ -75,9 +152,6 @@
                 <li class="nav-item">
                 <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.chrishammond.com/contact">Contact</a>
-                </li>
 
                 {% include search-lunr.html %}
 
@@ -96,30 +170,20 @@
 
 <div class="container">
 
-<!-- Site Title
-================================================== -->
-<!--
-<div class="mainheading">
-    <h1 class="sitetitle">{{ site.name }}</h1>
-    <p class="lead">
-        {{ site.description }}
-    </p>
-</div>
--->
 
 <!-- Content
 ================================================== -->
-<div class="main-content">
+<main class="main-content">
     {{ content }}
-</div>
+</main>
 
 {% if site.mailchimp-list %}
 <!-- Bottom Alert Bar
 ================================================== -->
 <div class="alertbar">
 	<div class="container text-center">
-		<span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
-        <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
+		<span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}">  Never miss a <b>story</b> from us, subscribe to our newsletter</span>
+        <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate"  novalidate>
             <div class="mc-field-group">
             <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
             <input type="submit" value="Subscribe" name="subscribe" class="heart">
@@ -141,14 +205,15 @@
             </div>
 		</div>
 		<div class="col-md-8 p-5 align-self-center text-center">
-            {% assign categories_list = site.categories %}
+
+            {% assign categories_list = site.categories | sort %}           
             {% if categories_list.first[0] == null %}
                 {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
+                    <a class="mt-1 mb-1" href="{{site.baseurl}}/category/{{ category | url_escape | strip | slugify }}/">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
                 {% endfor %}
             {% else %}
                 {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
+                    <a class="mt-1 mb-1" href="{{site.baseurl}}/category/{{ category[0] | url_escape | strip |  slugify }}/">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
                 {% endfor %}
             {% endif %}
             {% assign categories_list = nil %}

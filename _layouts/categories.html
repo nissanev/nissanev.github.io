@@ -1,13 +1,15 @@
 ---
-title: "Categories"
 layout: default
-permalink: "/categories.html"
+description: "List of Articles/Posts from the {{ site.title }} Category(ies)"
+permalink: "/category"
 ---
-
+<h1>{{ site.title }} - Categories</h1>
 <div class="row listrecent">
-{% for category in site.categories %}
+{% assign sortedCategories = site.categories | sort %}
+{% for category in sortedCategories %}
+
 <div class="section-title col-md-12 mt-4">
-<h2 id="{{ category[0] | replace: " ","-" }}">Category <span class="text-capitalize">{{ category[0] }}</span></h2>
+<h2 id="{{ category[0] | replace: " ","-" }}">Category <span class="text-capitalize"><a href="{{site.baseurl}}/category/{{ category[0] | url_escape | strip | slugify }}/">{{ category[0] }}</a></span></h2>
 </div>
 {% assign pages_list = category[1] %}
 {% for post in pages_list %}

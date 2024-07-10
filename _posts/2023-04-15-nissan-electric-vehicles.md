@@ -1,7 +1,10 @@
 ---
 layout: post
 title: The Electric Revolution - Exploring Nissan's Lineup of Innovative EVs
+description: "Nissan has been a key player in the electric vehicle (EV) market for over a decade. The Japanese automaker has produced some of the most popular and affordable electric cars, making EVs more accessible to the masses."
+keywords: "nissan, ev, electric vehicle, battery"
 date: '2023-04-15T08:00:15+00:00'
+last_modified_at: '2024-07-10T10:05:00+00:00'
 permalink: electric-revolution
 image: Leaf-1.jpg
 categories: [ nissanev ]

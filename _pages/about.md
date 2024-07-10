@@ -8,4 +8,4 @@ redirect_from:
 ---
 {% picture nissanev-1.jpg %}
 
-Want this domain name?
+Want this domain name? [Contact Me](https://www.chrishammond.com)

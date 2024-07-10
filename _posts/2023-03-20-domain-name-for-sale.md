@@ -1,7 +1,10 @@
 ---
 layout: post
 title: Domain name for sale
+description: "This domain name is for sale! If you are an individual or business that is passionate about electric vehicles and specifically, Nissan Electric Vehicles, then owning the domain name NissanEV.com could be a game-changer for you."
+keywords: "nissan, ev, electric vehicle, battery, domain"
 date: '2023-03-20T10:00:15+00:00'
+last_modified_at: '2024-07-10T10:05:00+00:00'
 permalink: domain-name-for-sale
 image: nissanev-1.jpg
 categories: [ nissanev ]
