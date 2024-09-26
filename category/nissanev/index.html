@@ -178,8 +178,9 @@
 						</style>
 
 						<form
+							role="search"
 							class="bd-search"
-							onSubmit="return lunr_search(document.getElementById('lunrsearch').value);"
+							onsubmit="return sanitizeAndSearch();"
 						>
 							<input
 								type="text"
@@ -188,7 +189,7 @@
 								name="q"
 								maxlength="255"
 								value=""
-								placeholder="Type and enter..."
+								placeholder="Search: Type and enter..."
 							/>
 						</form>
 
@@ -197,6 +198,25 @@
 						</div>
 
 						<script src="/assets/js/lunrsearchengine.js"></script>
+
+						<script>
+							function sanitizeAndSearch() {
+								const searchBox = document.getElementById("lunrsearch");
+								const originalValue = searchBox.value;
+
+								// Sanitize the search input
+								const sanitizedValue = originalValue.replace(
+									/[<>\/\\{}()$&+%#'"`]/g,
+									""
+								);
+
+								// Set the sanitized value back to the input field (optional)
+								searchBox.value = sanitizedValue;
+
+								// Pass sanitized value to lunr_search function
+								return lunr_search(sanitizedValue);
+							}
+						</script>
 					</ul>
 
 					<!-- End Menu -->
