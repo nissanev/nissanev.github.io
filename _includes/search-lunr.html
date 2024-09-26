@@ -1,6 +1,5 @@
 <script src="{{site.baseurl}}/assets/js/lunr.js"></script>
 
-
 <style>
     .lunrsearchresult .title {color: #d9230f;}
     .lunrsearchresult .url {color: silver;}
@@ -9,9 +8,8 @@
     .lunrsearchresult a:hover .title {text-decoration: underline;}
 </style>
 
-
-<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+<form role="search" class="bd-search" onsubmit="return sanitizeAndSearch();">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search: Type and enter..."/>
 </form>
 
 <div id="lunrsearchresults">
@@ -19,3 +17,19 @@
 </div>
 
 <script src="{{site.baseurl}}/assets/js/lunrsearchengine.js"></script>
+
+<script>
+    function sanitizeAndSearch() {
+        const searchBox = document.getElementById('lunrsearch');
+        const originalValue = searchBox.value;
+
+        // Sanitize the search input
+        const sanitizedValue = originalValue.replace(/[<>\/\\{}()$&+%#'"`]/g, '');
+
+        // Set the sanitized value back to the input field (optional)
+        searchBox.value = sanitizedValue;
+
+        // Pass sanitized value to lunr_search function
+        return lunr_search(sanitizedValue);
+    }
+</script>
