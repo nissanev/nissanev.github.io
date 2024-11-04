@@ -85,7 +85,7 @@ GEM
       ffi (~> 1.12)
       logger
     safe_yaml (1.0.5)
-    sass-embedded (1.80.5)
+    sass-embedded (1.80.6)
       google-protobuf (~> 4.28)
       rake (>= 13)
     terminal-table (3.0.2)
